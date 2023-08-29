@@ -1,0 +1,178 @@
+@import "colors";
+@import "typography";
+@import "buttons";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    background-color: #f6f7f7;
+    overflow-x: hidden;
+}
+.hero {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.785),rgba(0, 0, 0, 0.63)), url("/assets/background.jpg");
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    a {
+        text-shadow: none;
+    }
+}
+header {
+    background-color: $accent;
+    border-bottom: 5px solid $accentDarker;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+label {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav {
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 10px;
+            font-weight: 300;
+            &:hover {
+                font-weight: 600;
+                
+            }
+        }
+    }
+
+
+.paceAdjustmentInterface {
+    background-color: $lightGrey;
+    padding: 15px;
+    border-radius: 15px;
+    form {
+        display: flex;
+    flex-direction: column;
+    gap: 15px;
+    input {
+        border: 0px solid;
+                    height: 40px;
+                    padding: 0px 10px;
+                    border-radius: 15px;
+        flex-grow: 1;
+
+    }
+    button {
+        width: fit-content;
+        
+    }
+    }
+    
+}
+.paceAdjustmentDescription {
+    background-color: $accent;
+    padding: 15px;
+    border-radius: 15px;
+    
+    color: white;
+    
+}
+#paceCalculator {
+    div {
+        border-radius: 15px;
+        
+        &.paceCalculatorDescription {
+            background-color: $primary;
+            color: white;
+            
+        }
+        &.paceCalculatorInterface {
+            background-color: $lightGrey;
+            form {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                #timeLabel, #distanceLabel {
+                    width: 100%;
+                }
+                button {
+                    background-color: $primary;
+                }
+
+                input {
+                    border: 0px solid;
+                    height: 40px;
+                    padding: 0px 10px;
+                    border-radius: 15px;
+                    ;
+                }
+                #hours, #minutes, #seconds {
+                    flex-shrink: 1;
+                }
+            
+            }
+        }
+    }
+}
+#weatherAPIRequest {
+    background-color: $primary;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        gap: 30px;
+        align-items: center;
+        input {
+            height: 40px;
+            flex-grow: 1;
+        }
+        button {
+            margin-top: 0px;
+            width: fit-content;
+        }
+    }
+}
+#weatherAPIInformation {
+    background-color: $lightGrey;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#equipmentInfoResponse ul {
+    list-style-type: none;
+    li {
+        font-size: 1.125;
+    }
+}
+#locationResult, #temperatureResult, #equipmentInfoResponse, #paceAdjustmentResult {
+    color: $accent;
+    font-weight: 700;
+}
+
+
+.footer {
+    background-color: $accent;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid $accentDarker;
+}

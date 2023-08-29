@@ -1,0 +1,234 @@
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.44rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.95rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.12rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.12rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.heroButton, .navButton {
+  background-color: #e7291a;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.heroButton:hover, .navButton:hover {
+  background-color: #b81f11;
+  color: white;
+}
+
+.formButton {
+  height: 40px;
+  background-color: #e7291a;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: 0px solid;
+}
+.formButton:hover {
+  background-color: #b81f11;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f6f7f7;
+  overflow-x: hidden;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.63)), url("/assets/background.jpg");
+  text-shadow: 2px 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero a {
+  text-shadow: none;
+}
+
+header {
+  background-color: #e7291a;
+  border-bottom: 5px solid #b81f11;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+}
+
+label {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-weight: 300;
+}
+nav a:hover {
+  font-weight: 600;
+}
+
+.paceAdjustmentInterface {
+  background-color: #dbdbdb;
+  padding: 15px;
+  border-radius: 15px;
+}
+.paceAdjustmentInterface form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.paceAdjustmentInterface form input {
+  border: 0px solid;
+  height: 40px;
+  padding: 0px 10px;
+  border-radius: 15px;
+  flex-grow: 1;
+}
+.paceAdjustmentInterface form button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.paceAdjustmentDescription {
+  background-color: #e7291a;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+}
+
+#paceCalculator div {
+  border-radius: 15px;
+}
+#paceCalculator div.paceCalculatorDescription {
+  background-color: #0a0c0b;
+  color: white;
+}
+#paceCalculator div.paceCalculatorInterface {
+  background-color: #dbdbdb;
+}
+#paceCalculator div.paceCalculatorInterface form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#paceCalculator div.paceCalculatorInterface form #timeLabel, #paceCalculator div.paceCalculatorInterface form #distanceLabel {
+  width: 100%;
+}
+#paceCalculator div.paceCalculatorInterface form button {
+  background-color: #0a0c0b;
+}
+#paceCalculator div.paceCalculatorInterface form input {
+  border: 0px solid;
+  height: 40px;
+  padding: 0px 10px;
+  border-radius: 15px;
+}
+#paceCalculator div.paceCalculatorInterface form #hours, #paceCalculator div.paceCalculatorInterface form #minutes, #paceCalculator div.paceCalculatorInterface form #seconds {
+  flex-shrink: 1;
+}
+
+#weatherAPIRequest {
+  background-color: #0a0c0b;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+#weatherAPIRequest form {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+  align-items: center;
+}
+#weatherAPIRequest form input {
+  height: 40px;
+  flex-grow: 1;
+}
+#weatherAPIRequest form button {
+  margin-top: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#weatherAPIInformation {
+  background-color: #dbdbdb;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#equipmentInfoResponse ul {
+  list-style-type: none;
+}
+#equipmentInfoResponse ul li {
+  font-size: 1.125;
+}
+
+#locationResult, #temperatureResult, #equipmentInfoResponse, #paceAdjustmentResult {
+  color: #e7291a;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #e7291a;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid #b81f11;
+}/*# sourceMappingURL=style.css.map */
